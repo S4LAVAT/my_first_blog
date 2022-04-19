@@ -1,0 +1,14 @@
+{% extends "blogs/_base.html" %}
+{% block title %}О себе Мой первый сайт{% endblock title %}
+{% block content %}
+                  <!-- content -->
+      	<div class="row">
+      		<h2>Привет мир</h2>	
+      		<ul>
+      			{% for blog in blogs %}
+      				<li>{{blog.name}} author:{{blog.author.name}} publication_date{{blog.publication_date}}</li>
+      			{% endfor %}
+      		</ul>
+      	</div>
+                  <!-- endcontent -->        
+{% endblock content %}

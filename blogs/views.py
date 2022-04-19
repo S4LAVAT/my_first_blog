@@ -1,26 +1,36 @@
 from django.shortcuts import render
 
 
-def index(request):
+def blogs_index(request):
 	blogs = [
-	'первый блог',
-	'второй блог',
-	'третий блог',
-	'четвертый блог'
+		{'name':'my firs blog', 'author':{'name': 'admin'},'publication_date':
+		'14.04.22' },
+		{'name':'my second blog', 'author':{'name': 'admin'},'publication_date':
+		'15.04.22'},
+		{'name':'my therd blog', 'author':{'name': 'admin'},'publication_date':
+		'16.04.22'},
 	]
 
 	context = {
-	'blogs': blogs
+			'blogs': blogs
 	}
 
-	return render(request, 'blogs/index.html', context)
+	return render(request, 'blogs/blogs_index.html', context)
 
 
-def user(request):
-	user_name = 'salavat'
-	age = '15'
+def user_page(request):
+	user_data = {
+		'user_name': 'salavat',
+		'user_age': 15
+	}
 	context = {
-		'user_name': user_name,
-		'age': age
+		'user_data': user_data
 	}
-	return render(request, 'blogs/user.html', context)
+	return render(request, 'blogs/user_page.html', context)
+
+def first_blog(request):
+	first_blog = "мой первй блог"
+	context = {
+		'first_blog': first_blog
+	}
+	return render(request, 'blogs/first_blog.html', context)
