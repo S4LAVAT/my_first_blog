@@ -1,9 +1,12 @@
 {% extends "blogs/_base.html" %}
 {% block title %}О себе Мой первый сайт{% endblock title %}
 {% block content %}
+{% load static %}
 
-   <span>Меня зовут {{ user_data.user_name }}</span>	
-   <span>Мне  {{ user_data.user_age}}</span>
-
+	<div class="row">
+   		<span>Меня зовут {{ user_data.user_name }}</span>	
+   		<span>Мне  {{ user_data.user_age}}</span>
+   		<img src="{% static 'blogs/img/img.jpg' %}" alt="фон">
+   	</div>
 {% endblock content %}
  
