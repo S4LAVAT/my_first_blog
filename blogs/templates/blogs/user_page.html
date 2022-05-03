@@ -3,10 +3,99 @@
 {% block content %}
 {% load static %}
 
-	<div class="row">
-   		<span>Меня зовут {{ user_data.user_name }}</span>	
-   		<span>Мне  {{ user_data.user_age}}</span>
-   		<img src="{% static 'blogs/img/img.jpg' %}" alt="фон">
-   	</div>
-{% endblock content %}
- 
+<div class="row  g-3 mt-2">
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(red).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="{% url 'phone_models' %}" class="btn btn-danger">купить</a>
+		  </div>
+		</div>
+	</div>
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(pink).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="{% url 'phone_models' %}" class="btn btn-danger">купить</a>
+		  </div>
+		</div>		
+	</div>
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(white).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="{% url 'phone_models' %}" class="btn btn-danger">купить</a>
+		  </div>
+		</div>		
+	</div>
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(black).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="{% url 'phone_models' %}" class="btn btn-danger">купить</a>
+		  </div>
+		</div>	
+	</div>
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(blue).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="#" class="btn btn-danger">купить</a>
+		  </div>
+		</div>		
+	</div>
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(whiteblue).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="#" class="btn btn-danger">купить</a>
+		  </div>
+		</div>		
+	</div>
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(gray).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13 Pro MAX</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="{% url 'phone_models' %}" class="btn btn-danger">купить</a>
+		  </div>
+		</div>		
+	</div>
+	<div class="col-xl-3 col-lg-2 col-md-4 col-sm-12 mb-4">
+		<div class="card">
+		  <img src="{% static 'blogs/img/iphon(silver).jpg' %}" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">iPhone 13 Pro MAX</h5>
+		    <p class="card-text">Смартфон Apple IPhone обладает хорошей камерой на 12+12 Мп. Объем встроенной памяти составляет 128 Gb.</p>
+		    <a href="{% url 'phone_models' %}" class="btn btn-danger">купить</a>
+		  </div>
+		</div>		
+	</div>
+	<div class="mb-4 mx-auto">
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="http://localhost:8000">1</a></li>
+		    <li class="page-item"><a class="page-link" href="http://localhost:8000/user">2</a></li>
+		    <li class="page-item"><a class="page-link" href="http://localhost:8000/first_blog">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		  </ul>
+		</nav>
+	</div>
+</div>
+
+
+	{% endblock content %}

@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{% block title %}мой первый сайт{% endblock title %}</title>
 	<link rel="stylesheet" href="{% static 'blogs/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'blogs/css/custom.css' %}">
 </head>
 <body>
 		<!-- <div class="row">
@@ -26,12 +27,9 @@
 	          <a class="nav-link" href="{% url 'blogs_index' %}">BLOGS</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="{% url 'user_page' %}">USER PAGE</a>
+	          <a class="nav-link" href="{% url 'user_page' %}">PRODUCTS</a>
 	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="{% url 'first_blog' %}">MY FIRST BLOG</a>
-	        </li>
-	      </ul>
+	        	      </ul>
 	      <form class="d-flex">
 	        <input class="form-control me-2" type="search" placeholder="что найти?" aria-label="Поиск">
 	        <button class="btn btn-warning" type="submit">Поиск</button>

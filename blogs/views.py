@@ -34,3 +34,22 @@ def first_blog(request):
 		'first_blog': first_blog
 	}
 	return render(request, 'blogs/first_blog.html', context)
+
+
+def first_blog(request):
+	first_blog = "мой первй блог"
+	context = {
+		'first_blog': first_blog
+	}
+	return render(request, 'blogs/first_blog.html', context)
+
+
+def phone_models(request):
+	phone_models = "мой первй блог"
+	context = {
+		'phone_models': phone_models
+	}
+	return render(request, 'blogs/phone_models.html', context)
+
+
+
